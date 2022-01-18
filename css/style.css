@@ -22,8 +22,9 @@ a {
 
 /* header */
 body {
-    background-image: url("/img/background1.jpg");
+    background-image: url(../img/background1.jpg);
     background-position: 54% -2%;
+    background-color: white;
     font-family: 'Open sans', sans-serif;
 }
 

@@ -38,7 +38,7 @@ header {
     text-decoration: none;
 }
 
-.nav-principal a:hover {
+.nav-principal a:hover, header p:hover {
     color:#f53838;
 }
 

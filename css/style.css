@@ -3,9 +3,9 @@
 
 /* RESET */
 * {
+  border: 0;
   margin: 0;
   padding: 0;
-  border: 0;
 }
 
 body {
@@ -21,14 +21,14 @@ body {
 }
 
 header {
-  padding: 50px 0;
-  display: flex;
-  max-width: 95%;
-  margin: 0 auto;
-  justify-content: space-between;
   align-items: center;
+  display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: space-between;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
 main {
@@ -47,14 +47,15 @@ body p {
 }
 
 .menu {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  list-style: none;
   min-width: 500px;
 }
 
 .menu a {
+  color: rgba(0, 0, 0, 0.644);
   text-decoration: none;
 }
 
@@ -63,9 +64,9 @@ body p {
 }
 
 .contact {
+  align-items: center;
   display: flex;
   gap: 50px;
-  align-items: center;
 }
 
 .contact > p:hover {
@@ -74,11 +75,11 @@ body p {
 }
 
 .contact__btn {
-  width: 100px;
-  text-align: center;
+  background-color: white;
   border-radius: 30px;
   border: 1px solid #f53838;
-  background-color: white;
+  text-align: center;
+  width: 100px;
 }
 
 .contact__btn:hover {
@@ -86,9 +87,9 @@ body p {
 }
 
 .contact__btn > a {
-  font-weight: 600;
-  display: block;
   color: #f53838;
+  display: block;
+  font-weight: 600;
   padding: 10px;
   text-decoration: none;
 }
@@ -108,21 +109,21 @@ body p {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   .menu {
-    /* flex-flow: column nowrap; */
-    min-width: 300px;
     align-items: center;
     gap: 10px;
+    flex-flow: column nowrap;
+    min-width: 300px;
   }
 }
 
 /* SECTION 1 */
 .section1 {
   display: flex;
-  justify-content: flex-start;
   flex-flow: column wrap;
   gap: 25px;
+  justify-content: flex-start;
   max-width: 40%;
   margin: 50px 0;
 }
@@ -137,18 +138,18 @@ body p {
 }
 
 .section1__btn {
-  width: 200px;
-  text-align: center;
-  border-radius: 30px;
-  box-shadow: 0 10px 30px rgb(245 56 56 / 35%);
   background-color: #f53838;
+  box-shadow: 0 10px 30px rgb(245 56 56 / 35%);
+  border-radius: 30px;
+  text-align: center;
+  width: 200px;
 }
 
 .section1__btn > a {
-  text-decoration: none;
+  color: white;
   display: block;
   padding: 15px;
-  color: white;
+  text-decoration: none;
 }
 
 .section1__btn:hover {
@@ -157,9 +158,9 @@ body p {
 
 @media screen and (max-width: 990px) {
   .section1 {
-    max-width: 100%;
-    margin: 400px auto 100px auto;
     align-items: center;
+    margin: 400px auto 100px auto;
+    max-width: 100%;
     max-width: 90%;
   }
 }
@@ -174,9 +175,9 @@ body p {
 .section2 {
   display: flex;
   flex-flow: column nowrap;
+  gap: 30px;
   max-width: 95%;
   margin: 100px auto;
-  gap: 30px;
 }
 
 .section2 > :nth-child(1n):nth-child(-n + 2) {
@@ -189,7 +190,7 @@ body p {
 
 .section2__item {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
+  justify-content: center;
 }

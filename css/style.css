@@ -10,7 +10,7 @@
 
 :root {
   --color-first: #f53838;
-  --color-title: #021558;
+  --color-second: #021558;
   --color-text: rgba(0, 0, 0, 0.745);
   --color-btn: white;
   --border-radius-btn: 30px;
@@ -101,7 +101,7 @@ section .conteiner1 {
 }
 
 section .conteiner1 #main__title {
-  color: var(--color-title);
+  color: var(--color-second);
   font-size: 4.5rem;
   font-family: var(--font-family-title);
 }
@@ -151,7 +151,7 @@ section .conteiner2 {
 }
 
 section .conteiner2 > h2 {
-  color: var(--color-title);
+  color: var(--color-second);
   font-family: var(--font-family-title);
   font-size: var(--font-size-subtitle);
 }
@@ -194,7 +194,7 @@ section .conteiner3 {
 section .conteiner3 > h2 {
   font-size: var(--font-size-subtitle);
   font-family: var(--font-family-title);
-  color: var(--color-title);
+  color: var(--color-second);
   margin: 20rem 0 5rem 0;
 }
 
@@ -217,7 +217,7 @@ section .conteiner3 .section3__item img {
 
 section .conteiner3 article div h3 {
   font-family: var(--font-family-title);
-  color: var(--color-title);
+  color: var(--color-second);
 }
 
 section .conteiner4 {
@@ -251,7 +251,7 @@ section .conteiner4 > :nth-child(1) {
   font-family: var(--font-family-title);
   font-size: 2.5rem;
   text-align: left;
-  color: var(--color-title);
+  color: var(--color-second);
   grid-column: 2/6;
   grid-row: 1/1;
 }
@@ -271,6 +271,43 @@ section .conteiner4 > :nth-child(4) {
   grid-row: 3/6;
 }
 
+footer .conteiner {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background-color: var(--color-second);
+}
+
+footer .conteiner > :nth-child(2) {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+footer .conteiner > :nth-child(2) div {
+  border: 1px solid black;
+  border-radius: 3rem;
+  flex: 0 1 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .conteiner > :nth-child(2) div:hover {
+  background-color: white;
+}
+
+footer .conteiner > :nth-child(2) div img {
+  width: 100%;
+}
+
+footer .conteiner > :nth-child(3) {
+  color: white;
+}
 /* =================== 
 MEDIA QUERIES
 ======================*/

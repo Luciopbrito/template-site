@@ -1,3 +1,5 @@
+'use strict'
+
 let botao_ativado = true;
 
 const menuMobile = document.querySelector('.menu__mobile');

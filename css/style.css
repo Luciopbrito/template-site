@@ -525,6 +525,7 @@ section:nth-child(8) .conteiner div:nth-child(2) {
 section:nth-child(8) .conteiner div:nth-child(2) h2 {
   font-size: var(--font-size-subtitle);
   font-family: var(--font-family-title);
+  color: var(--color-second);
 }
 
 section:nth-child(8) form {

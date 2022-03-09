@@ -13,7 +13,7 @@
   --color-second: #021558;
   --color-text: rgba(0, 0, 0, 0.745);
   --border-radius-btn: 30px;
-  --shadow-btn: 0px 5px 9px rgb(0 0 0 / 20%);
+  --shadow-btn: 0px 2px 10px rgb(0 0 0 / 20%);
   --font-size-subtitle: 3.5rem;
   --font-family-title: "Rubik", sans-serif;
 }
@@ -504,6 +504,59 @@ section:nth-child(7) .conteiner > p {
   font-size: 1.5em;
 }
 
+section:nth-child(8) .conteiner {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 5rem 2rem;
+}
+
+section:nth-child(8) .conteiner div:nth-child(1) img {
+  width: 100%;
+}
+
+section:nth-child(8) .conteiner div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: flex-start;
+  padding: 0 1rem;
+}
+
+section:nth-child(8) .conteiner div:nth-child(2) h2 {
+  font-size: var(--font-size-subtitle);
+  font-family: var(--font-family-title);
+}
+
+section:nth-child(8) form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  height: 100%;
+}
+
+section:nth-child(8) form input:last-child {
+  background-color: var(--color-first);
+  padding: 1.5rem;
+  width: 20rem;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  border-radius: 3rem;
+  box-shadow: var(--shadow-btn);
+  margin: 1rem 0 0 0;
+}
+
+section:nth-child(8) form input:last-child:hover {
+  box-shadow: none;
+}
+
+form input:nth-child(1n):nth-child(-n + 4) {
+  border: 1px solid rgba(0 0 0 / 10%);
+  border-radius: 3rem;
+  padding: 1.5rem 2rem;
+  width: 90%;
+}
+
 footer .conteiner {
   padding: 2rem 0;
   display: flex;
@@ -648,6 +701,11 @@ MENU MOBILE
 
   section:nth-child(4) .conteiner {
     background-position: -68px -39px;
+  }
+
+  section:nth-child(8) .conteiner {
+    grid-template-columns: auto;
+    grid-gap: 2rem;
   }
 }
 

@@ -338,7 +338,12 @@ section:nth-child(6) .conteiner div:nth-child(2) h2 {
 }
 
 section:nth-child(6) .conteiner div:nth-child(2) ul {
-  list-style: "\2705\00A0"inside;
+  list-style: none;
+}
+
+section:nth-child(6) .conteiner div:nth-child(2) li i {
+  color: #2fab73;
+  padding: 0.5rem;
 }
 
 .img__section6 > img {
@@ -551,6 +556,51 @@ section:nth-child(8) form input:last-child:hover {
   box-shadow: none;
 }
 
+section:nth-child(9) .conteiner {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 0 2rem;
+  margin: 10rem 0;
+}
+
+section:nth-child(9) .conteiner > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section:nth-child(9) .conteiner div:nth-child(1) h2 {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-subtitle);
+  color: var(--color-second);
+}
+
+section:nth-child(9) iframe {
+  width: 100%;
+  height: 30rem;
+}
+
+div#contact > div i {
+  color: var(--color-first);
+  padding: 0.5rem;
+}
+
+div#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div#contact > div:nth-child(n + 2):nth-child(-n + 3) {
+  display: flex;
+  align-items: flex-start;
+}
+
+div#contact > div:nth-child(4) {
+  display: flex;
+  align-items: flex-start;
+}
+
 form input:nth-child(1n):nth-child(-n + 4) {
   border: 1px solid rgba(0 0 0 / 10%);
   border-radius: 3rem;
@@ -756,6 +806,14 @@ MENU MOBILE
 
   .box__grid {
     grid-template-columns: 1fr;
+  }
+
+  section:nth-child(9) .conteiner {
+    grid-template-columns: auto;
+    background-image: url(/img/img1-section9.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 

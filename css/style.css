@@ -24,7 +24,7 @@ html {
 
 body {
   background-image: url(../img/background1.jpg);
-  background-position: 51% 0%;
+  background-position: center top;
   background-repeat: no-repeat;
   font-size: 1.6rem;
   font-family: "Open sans", sans-serif;
